@@ -31,7 +31,7 @@
 		}	
 	}
 	
-	$form = "<form method='POST' action='mqconvert.php'>Target Value (px):<br /><input name='target' type='text' width='10' value=".$target."><br /><br />Context Value (px):<br /><input name='context' type='text' width='10' value=".$context."><br /><br /><b>Output Options:</b><br />".$unit_select."<br /><br /><input type='submit' value='Calculate'><input type='reset' value='Reset'></form><br />";
+	$form = "<form method='POST' action=\"$_SERVER[PHP_SELF]\">Target Value (px):<br /><input name='target' type='text' width='10' value=".$target."><br /><br />Context Value (px):<br /><input name='context' type='text' width='10' value=".$context."><br /><br /><b>Output Options:</b><br />".$unit_select."<br /><br /><input type='submit' value='Calculate'><input type='reset' value='Reset'></form><br />";
 	
 	echo $form."<b>Output: </b>".$result;
 ?>
