@@ -9,9 +9,11 @@ CSS3 Media Query Converter
 +About+
 +++++++
 
-    This tool allows for the easy calculation of css element sizes in em/percent by way of the Marcotte Formula (Target / Context = Result)
+    This tool allows for the easy calculation of css element sizes in 
+    em/percent by way of the Marcotte Formula (Target / Context = Result)
 
-    This is useful in the creation of "device independent" responsive design stylesheets and media queries.
+    This is useful in the creation of "device independent" responsive 
+    design stylesheets and media queries.
 
 
 +++++++++++
