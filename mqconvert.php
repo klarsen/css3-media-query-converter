@@ -1,7 +1,7 @@
 <html>
-  <head><title>CSS3 Media Query Converter v0.1</title></head>
+  <head><title>CSS3 Media Query Converter</title></head>
 	<body>
-		<h1>CSS3 Media Query Converter v0.1</h1>
+		<h1>CSS3 Media Query Converter</h1>
 		<h4>(Marcotte Calculator)</h4>
 <?php 	
 	if (($_POST[context] == "" || $_POST[context] == "0") || ($_POST[target] == "" || $_POST[target] == "0")) {
