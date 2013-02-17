@@ -2,7 +2,7 @@
   <head><title>CSS3 Media Query Converter v0.1</title></head>
 	<body>
 		<h1>CSS3 Media Query Converter v0.1</h1>
-		<h4>(Marcotte Calculator) by ARMt</h4>
+		<h4>(Marcotte Calculator)</h4>
 <?php 	
 	if (($_POST[context] == "" || $_POST[context] == "0") || ($_POST[target] == "" || $_POST[target] == "0")) {
 		echo "<font color='#FF0000'><h4>Oops, you seem to be missing something!</h4><h4>Please enter non-zero decimal values for \"target\" and \"context,\"  then click \"Calculate\" to try again...</h4></font>";
