@@ -1,13 +1,7 @@
 css3-media-query-converter
 ==========================
 
-==========================
-CSS3 Media Query Converter 
-==========================
-
-+++++++
-+About+
-+++++++
++++++++++++About++++++++++
 
     This tool allows for the easy calculation of css element sizes in 
     em/percent by way of the Marcotte Formula (Target / Context = Result)
@@ -16,11 +10,10 @@ CSS3 Media Query Converter
     design stylesheets and media queries.
 
 
-+++++++++++
-+Licensing+
-+++++++++++
++++++++++Licensing++++++++
 
     Copyright Kevin Larsen, 2013
+    klarsen.sales@gmail.com
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
