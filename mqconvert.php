@@ -69,7 +69,7 @@
 // creates form code block, including target, context, and unit_select (radio button form code) variable contents
 	$form = "<form method='POST' action=\"$_SERVER[PHP_SELF]\">Target Value (px):<br /><input name='target' type='text' width='10' value=".$target."><br /><br />Context Value (px):<br /><input name='context' type='text' width='10' value=".$context."><br /><br /><b>Output Options:</b><br />".$unit_select."<br /><br /><input type='submit' value='Calculate'><input type='reset' value='Reset'></form><br />";
 // displays form code block along with the formatted output of the calculation
-	echo $form."<b>Output: </b>".$result;
+	echo $form.<b>Output: </b>.$result;
 ?>
 	</body>
 </html>
