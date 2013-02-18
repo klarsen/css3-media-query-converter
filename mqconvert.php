@@ -44,8 +44,7 @@
 	} else { 
 // sets value of target and context variables from HTTP POST
 		$target = $_POST[target];
-		$context = $_POST[context];	
-		
+		$context = $_POST[context];		
 // input validity check, ensuring a numeric value was entered in each input field
 		if (is_numeric($target) && is_numeric($context)){
 			if ($_POST[unit] == "em"){
@@ -66,10 +65,8 @@
 			echo "<font color='#FF0000'><h4>Aw snap, that ain't a number! Ain't nobody got time for that!</h4></font>";
 		}	
 	}
-// creates form code block, including target, context, and unit_select (radio button form code) variable contents
-	$form = "<form method='POST' action=\"$_SERVER[PHP_SELF]\">Target Value (px):<br /><input name='target' type='text' width='10' value=".$target."><br /><br />Context Value (px):<br /><input name='context' type='text' width='10' value=".$context."><br /><br /><b>Output Options:</b><br />".$unit_select."<br /><br /><input type='submit' value='Calculate'><input type='reset' value='Reset'></form><br />";
-// displays form code block along with the formatted output of the calculation
-	echo $form."<b>Output: </b>".$result;
+// displays form code along with the formatted output of the calculation
+	echo "<form method='POST' action=\"$_SERVER[PHP_SELF]\">Target Value (px):<br /><input name='target' type='text' width='10' value=".$target."><br /><br />Context Value (px):<br /><input name='context' type='text' width='10' value=".$context."><br /><br /><b>Output Options:</b><br />".$unit_select."<br /><br /><input type='submit' value='Calculate'><input type='reset' value='Reset'></form><br /><b>Output: </b>".$result;
 ?>
 	</body>
 </html>
