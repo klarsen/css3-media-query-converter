@@ -48,21 +48,24 @@
 // input validity check, ensuring a numeric value was entered in each input field
 		if (is_numeric($target) && is_numeric($context)){
 			if ($_POST[unit] == "em"){
+// calculates result in em
 				$result = $target / $context;
 				$result .= "em";
 // creates radio button form code block based on checked "unit" value from HTTP POST
 				$unit_select = "<input type='radio' name='unit' value='em' checked>em<br /><input type='radio' name='unit' value=\"%\">percent";
 			} else {
-// non-numeric input error handling
+// calculates result in percent value
 				$result = (($target / $context) * 100);
 				$result .= "%";
+// creates radio button form code block based on checked "unit" value from HTTP POST
 				$unit_select = "<input type='radio' name='unit' value='em'>em<br /><input type='radio' name='unit' value=\"%\" checked>percent";
 			}
 		} else {
+// non-numeric input error handling
 			$target = "";
 			$context = "";
 			$result = "";
-			echo "<font color='#FF0000'><h4>Aw snap, that ain't a number! Ain't nobody got time for that!</h4></font>";
+			echo "<font color='#FF0000'><h4>Please enter only numeric values!</h4></font>";
 		}	
 	}
 // displays form code along with the formatted output of the calculation
